@@ -14,11 +14,12 @@ nav {
     top: 0px;
     z-index: 100;
     background-color: #f4f4f4;
-    box-shadow: 0 10px 53px -39px rgba(0,0,0,0.75);
+    box-shadow: 0 10px 53px -29px rgba(0,0,0,0.75);
     
 }
 .cont{
     padding: 10px;
+    margin: 0 20px 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,7 +38,6 @@ nav {
 
 .signupForm{
     z-index: -10;
-    position: relative;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
@@ -73,11 +73,15 @@ form input{
 form h3{
     font-size: 12px;
 }
-#submit{
+#btn{
     background-color: #9eb4f0;
     padding: 10px;
+    cursor: pointer;
     color: #f4f4f4;
-    
+}
+#btn:hover{
+    transition: 0.2s ease-in-out;
+    background-color: cornflowerblue;
 }
 
     /* FOOTER */
@@ -95,3 +99,16 @@ footer{
 .content p{
     font-size: 0.9rem;
 }
+
+@media only screen and (max-width: 768px) {
+    form{
+        width: 100%;
+    } 
+    .content{
+        width: 50%;
+      
+    }
+    .content p{
+        font-size: 0.7rem;
+    }
+  }
